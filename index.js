@@ -103,7 +103,23 @@ let ucetambolunenler,
 
 // 3a çözümü
 
-/* kodlar buraya */
+enbuyuk = 0;
+enkucuk = 1000;
+
+for(let i = 0; i<sayilar.length; i++){
+  if(sayilar[i]>enbuyuk){
+    enbuyuk = sayilar[i];
+  }
+}
+
+for (let j = 0; j<sayilar.length; j++){
+  if(sayilar[j]<enkucuk){
+    enkucuk = sayilar[j];
+  }
+}
+
+console.log(enbuyuk);
+console.log(enkucuk);
 
 // 3b çözümü:
 
