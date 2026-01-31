@@ -149,7 +149,11 @@ console.log(besyuzdenkucuksayilar);
 
 // 3e çözümü
 
-/* kodlar buraya */
+siralisayilar = [...besyuzdenkucuksayilar];
+
+siralisayilar.sort((a, b) => a - b);
+
+console.log(siralisayilar);
 
 // 3f çözümü
 
