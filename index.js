@@ -135,7 +135,11 @@ console.log(ucetambolunenler);
 
 // 3c çözümü:
 
-/* kodlar buraya */
+ucebolunenlerintoplami = ucetambolunenler.reduce((acc, sayi) => {
+  return acc + sayi;
+}, 0);
+
+console.log(ucebolunenlerintoplami);
 
 // 3d çözümü
 
