@@ -157,7 +157,34 @@ console.log(siralisayilar);
 
 // 3f çözümü
 
-/* kodlar buraya */
+let tekrarSayisi = {};
+tekraredensayilar = [];
+
+for (let i = 0; i < sayilar.length; i++) {
+  let sayi = sayilar[i];
+
+  if (tekrarSayisi[sayi] === undefined) {
+    tekrarSayisi[sayi] = 1;
+  } else {
+    tekrarSayisi[sayi]++;
+  }
+}
+
+for (let i = 0; i < sayilar.length; i++) {
+  let sayi = sayilar[i];
+  let tekrar = tekrarSayisi[sayi];
+
+  if (tekrar > 1) {
+    let mesaj = sayi + " sayısı " + tekrar + " kere tekrar edilmiştir";
+
+    if (tekraredensayilar.indexOf(mesaj) === -1) {
+      tekraredensayilar.push(mesaj);
+    }
+  }
+}
+
+console.log(tekraredensayilar);
+
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
